@@ -23,7 +23,7 @@ Purchased this vehicle with only a single valet key. Toyota/Lexus requires a mas
 | File | Description |
 |------|-------------|
 | [immobilizer-eeprom-structure.md](immobilizer-eeprom-structure.md) | Detailed technical documentation of the EEPROM layout |
-| [immobilizer-eeprom-map.png](immobilizer-eeprom-map.png) | Visual diagram of the 512-byte EEPROM with color-coded regions |
+| [immobilizer-eeprom-map.png](./immobilizer-eeprom-map.png) | Visual diagram of the 512-byte EEPROM with color-coded regions |
 
 ## Quick Summary
 
@@ -71,6 +71,6 @@ This research is provided for educational purposes. Ensure you have legal owners
 ## See Also
 
 - [Full EEPROM structure documentation](immobilizer-eeprom-structure.md)
-- [Visual EEPROM map](immobilizer-eeprom-map.png)
+- [Visual EEPROM map](./immobilizer-eeprom-map.png)
 - [YouTube vid showing the procedure on a Lexus IS - different file structure](https://www.youtube.com/watch?v=xbpU2LXYT_Q)
 - [YouTube vid showing necessary modifications to the CH341a programmer for automotive use](https://www.youtube.com/watch?v=hPKckby54uA)
