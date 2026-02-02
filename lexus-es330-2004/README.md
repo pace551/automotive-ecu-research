@@ -72,5 +72,5 @@ This research is provided for educational purposes. Ensure you have legal owners
 
 - [Full EEPROM structure documentation](immobilizer-eeprom-structure.md)
 - [Visual EEPROM map](immobilizer-eeprom-map.png)
-- https://www.youtube.com/watch?v=xbpU2LXYT_Q
-- https://www.youtube.com/watch?v=hPKckby54uA
+- [YouTube vid showing the procedure on a Lexus IS - different file structure]https://www.youtube.com/watch?v=xbpU2LXYT_Q
+- [YouTube vid showing necessary modifications to the CH341a programmer for automotive use]https://www.youtube.com/watch?v=hPKckby54uA
