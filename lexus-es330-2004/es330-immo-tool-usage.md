@@ -37,7 +37,7 @@ Loads a bin file and displays its contents without entering edit mode. Useful fo
 **Example output:**
 ```
 ------------------------------------------------------------
-File: jace-immo.bin
+File: orig-immo.bin
 ------------------------------------------------------------
 
 Key Slots: 4 of 6 occupied
@@ -112,7 +112,7 @@ Side-by-side comparison of two immobilizer files showing:
 ============================================================
 FILE COMPARISON
 ============================================================
-File 1: jace-immo.bin
+File 1: orig-immo.bin
 File 2: ebay-immo.bin
 
 ----------------------------------------
