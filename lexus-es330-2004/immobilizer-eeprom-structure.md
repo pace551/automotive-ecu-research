@@ -144,4 +144,4 @@ New transponder key programmed via ThinkDiag.
 
 ---
 
-*Document generated from analysis of actual EEPROM dumps from 2004 Lexus ES330, validated against a second immobilizer unit*
+*Document generated from analysis of actual EEPROM dumps from 2004 Lexus ES330, validated against a second immobilizer unit. Real key values obfuscated*
