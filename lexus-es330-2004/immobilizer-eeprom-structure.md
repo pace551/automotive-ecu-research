@@ -83,7 +83,7 @@ The delimiter varies by programming method:
 
 ## File Analysis
 
-### Original File (jace-immo.bin)
+### Original File (orig-immo.bin)
 The EEPROM as received with the vehicle - only had the valet key physically.
 
 | Slot | Key ID | Status | Notes |
@@ -93,29 +93,29 @@ The EEPROM as received with the vehicle - only had the valet key physically.
 | Slot 3 | A94D305D | VALID | Previous owner's key (not in possession) |
 | Slot 4 | EMPTY | - | |
 | Slot 5 | EMPTY | - | |
-| **Slot 6** | **D02E9065** | **VALID** | **YOUR VALET KEY** |
+| **Slot 6** | **390C8C7D** | **VALID** | **YOUR VALET KEY** |
 
-### After Modification (single_key_D02E9065_slot1.bin)
-Your valet key moved to Master Slot 1, all other slots cleared.
+### After Modification
+Valet key moved to Master Slot 1, all other slots cleared.
 
 | Slot | Key ID | Status |
 |------|--------|--------|
-| **Slot 1** | **D02E9065** | **VALID** |
+| **Slot 1** | **390C8C7D** | **VALID** |
 | Slot 2 | EMPTY | - |
 | Slot 3 | EMPTY | - |
 | Slot 4 | EMPTY | - |
 | Slot 5 | EMPTY | - |
 | Slot 6 | EMPTY | - |
 
-### After Programming New Key (jace-immo-2keys.bin)
+### After Programming New Key
 New transponder key programmed via ThinkDiag.
 
 | Slot | Key ID | Status | Notes |
 |------|--------|--------|-------|
-| **Slot 1** | **D02E9065** | VALID | Your original valet key (now master) |
+| **Slot 1** | **390C8C7D** | VALID | Your original valet key (now master) |
 | Slot 2 | EMPTY | - | |
 | Slot 3 | EMPTY | - | |
-| **Slot 4** | **04F7B0B8** | VALID | Your NEW transponder key |
+| **Slot 4** | **54A2B9F8** | VALID | Your NEW transponder key |
 | Slot 5 | EMPTY | - | |
 | Slot 6 | EMPTY | - | |
 

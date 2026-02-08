@@ -24,12 +24,14 @@ Purchased this vehicle with only a single valet key. Toyota/Lexus requires a mas
 |------|-------------|
 | [immobilizer-eeprom-structure.md](immobilizer-eeprom-structure.md) | Detailed technical documentation of the EEPROM layout |
 | [immobilizer-eeprom-map.png](./immobilizer-eeprom-map.png) | Visual diagram of the 512-byte EEPROM with color-coded regions |
+| [es330-immo-tool.py](es330-immo-tool.py) | Python CLI tool for manipulating EEPROM bin files |
+| [es330-immo-tool-usage.md](es330-immo-tool-usage.md) | Tool usage documentation and examples |
 
 ## Quick Summary
 
 ### Key Slot Layout
 
-The EEPROM contains 6 key slots (26 bytes each including 6 byte delimeter):
+The EEPROM contains 6 key slots (26 bytes each including 6 byte delimiter):
 
 | Slot | Offset | Type |
 |------|--------|------|
@@ -51,7 +53,7 @@ The 4-byte Key ID is reconstructed as: `byte[0:2] + byte[10:12]`
 
 ### Procedure
 
-1. Locate and remove immobilizer module (behind glovebox, above and to the right)
+1. Locate and remove immobilizer module (behind glovebox, above and to the left)
 2. Remove circuit board from case, locate 93C66 EEPROM 
 3. Read contents of chip in-circuit with CH341 and SOP8 clip, ASProgrammer software
 4. Identify valet key in Slot 6
@@ -59,6 +61,8 @@ The 4-byte Key ID is reconstructed as: `byte[0:2] + byte[10:12]`
 6. Clear unwanted keys from other slots
 7. Write modified EEPROM back to chip
 8. Use diagnostic tool to program additional keys normally
+
+Steps 4-6 can be performed manually with a hex editor, or using the included [es330-immo-tool.py](es330-immo-tool.py) - see [tool usage documentation](es330-immo-tool-usage.md).
 
 ## Results
 
@@ -72,5 +76,6 @@ This research is provided for educational purposes. Ensure you have legal owners
 
 - [Full EEPROM structure documentation](immobilizer-eeprom-structure.md)
 - [Visual EEPROM map](./immobilizer-eeprom-map.png)
+- [Tool usage documentation](es330-immo-tool-usage.md)
 - [YouTube vid showing the procedure on a Lexus IS - different file structure](https://www.youtube.com/watch?v=xbpU2LXYT_Q)
 - [YouTube vid showing necessary modifications to the CH341a programmer for automotive use](https://www.youtube.com/watch?v=hPKckby54uA)
